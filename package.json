@@ -9,9 +9,16 @@
     "type": "git",
     "url": "https://github.com/dsroden/evernode"
   },
+
+  "bin": {
+    "coveralls": "./node_modules/coveralls/bin/coveralls.js"
+  },
   "scripts": {
     "start": "node server/index.js",
-    "postinstall": "grunt deploy"
+    "postinstall": "grunt deploy",
+    "syntax": "grunt build",
+    "test": "make test",
+    "coveralls": "make test-cov | coveralls"
   },
   "author": "DSRoden <daniel.s.roden@gmail.com>",
   "license": "MIT",
