@@ -18,7 +18,6 @@ after_script:
 env:
   global:
     - DATABASE_URL=postgres://postgres@localhost/evernode_test
-
     - AWS_BUCKET=dsroden-evernode-test
     #AWS_ACCESS_KEY_ID
     - secure: 'DrRL9SnIdPWCnOBfJqdf4LH7BbZjedS1nFlx4dL6amUjDLrgeRtVcl5NaQooeVEcPg9Tsdxh1NbXZodnbf6EL5xdO7HtVzlzJ368ltTTfeO+O1ev2wDnrd4CW8T378dsCIXumx2eEIm45sSPMmS3Rs7HDHJAeF7sP0NgZMfJR4c='
