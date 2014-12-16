@@ -70,7 +70,7 @@ describe('Users', function(){
         };
 
         server.inject(options, function(response){
-          console.log(response);
+          //console.log(response);
           expect(response.statusCode).to.equal(200);
           expect(response.result.username).to.equal('bob');
           done();
