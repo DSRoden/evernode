@@ -143,7 +143,7 @@ describe('Users', function(){
         url: '/notes/' + noteId,
         headers: {
           cookie: cookie
-        },
+        }
       };
 
       server.inject(options, function(response){
@@ -162,7 +162,7 @@ describe('Users', function(){
         url: '/notes/' + noteId,
         headers: {
           cookie: cookie
-        },
+        }
       };
 
       server.inject(options, function(response){
@@ -180,7 +180,7 @@ describe('Users', function(){
         url: '/notes/count',
         headers: {
           cookie: cookie
-        },
+        }
       };
 
       server.inject(options, function(response){
