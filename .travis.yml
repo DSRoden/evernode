@@ -5,7 +5,7 @@ services:
   - postgresql
 addons:
   postgresql: "9.3"
-  souce_connect: true
+  sauce_connect: true
 notifications:
   email: false
 script:
@@ -13,7 +13,7 @@ script:
   - npm test
 before_script:
   - psql -c 'create database evernode_test;' -U postgres
-  - cd test/scripts; ./create_db.sh evernode_test; cd ../..;
+  - cd test/scripts; ./create-db.sh evernode_test; cd ../..;
   - PORT=9001 node server/index.js&
   - sleep 5
 after_script:
